@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" media="all"/>
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+
+
+<form  class="register-container" action="procesar.php" method="POST"  >
+    <h2  class="title">Contactanos</h2>
+    <section class="formulario__contacto" >
+        <label class="title" for="nombre">Nombre de la empresa:</label><br><br>
+        <input class="input-contactanos" type="text" id="nombre" name="nombre" required><br><br>
+
+        <label class="title" for="apellido">Nombre del contacto:</label><br><br>
+        <input class="input-contactanos" type="text" class="input" id="apellido" name="apellido" required><br><br>
+
+        <label class="title" for="correo">Correo Electrónico:</label><br><br>
+        <input class="input-contactanos" type="email" id="correo" class="input" name="correo" required><br><br>
+
+
+        <label class="title" for="nombre">Ubicacion:</label><br><br>
+        <input class="input-contactanos" type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label class="title" for="mensaje" >Mensaje:</label><br><br>
+        <textarea class="input" id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Cuentanos que necesitas"></textarea>
+
+
+    </section>
+    
+    <input class="formulario__button" type="submit" value="Enviar">
+  </form>
+</body>
+</html>

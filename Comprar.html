@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productos</title>
+  <link rel="stylesheet" href="./style.css" media="all"/>
+</head>
+<body>
+  <h1 class="formulario__titulo">Productos</h1>
+  <p><?php echo $nombre; ?></p>
+  <div class="input">
+    <h3>Producto 1</h3>
+    <p class="formulario__titulo">Precio: $10</p>
+    <form action="http://localhost/Equipo13/Comprar.php" method="POST">
+      <input type="hidden" name="producto" value="Producto 1">
+      <input type="hidden" name="precio" value="10">
+      <input type="hidden" name="nombreEmpresa" value=<?php echo $nombre; ?>>
+      <button class="formulario__button" id="boton" type="submit">Comprar</button>
+    </form>
+  </div><br><br>
+
+  <div class="input">
+    <h3>Producto 2</h3>
+    <p class="formulario__titulo">Precio: $20</p>
+    <form  action="http://localhost/Equipo13/Comprar.php" method="POST">
+      <input type="hidden" name="producto" value="Producto 2">
+      <input type="hidden" name="precio" value="20">
+      <input type="hidden" name="nombreEmpresa" value=<?php echo $nombre; ?>>
+      <button  class="formulario__button" id="boton" type="submit">Comprar</button>
+    </form>
+  </div><br><br>
+
+  <div class="input">
+    <h3>Producto 3</h3>
+    <p class="formulario__titulo">Precio: $30</p>
+    <form action="http://localhost/Equipo13/Comprar.php" method="POST">
+      <input type="hidden" name="producto" value="Producto 3">
+      <input type="hidden" name="precio" value="30">
+      <input type="hidden" name="nombreEmpresa" value=<?php echo $nombre; ?>>
+      <button class="formulario__button" id="boton" type="submit">Comprar</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
